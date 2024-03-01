@@ -15,11 +15,13 @@ const currentMonth = month[date.getMonth()];
 let currentDay = date.getDate();
 
 if (currentDay === 1) {
-    currentDay = "1st";
+    currentDay += "st";
 } else if (currentDay === 2) {
-    currentDay = "2nd"
+    currentDay += "nd"
+} else if (currentDay == 3) {
+    currentDay += "rd"
 } else {
-    currentDay += "th"
+    currentDay += "th";
 }
 
 app.use(express.static('public'));
