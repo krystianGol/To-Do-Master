@@ -1,0 +1,6 @@
+<%- include("partials/header.ejs") %>
+
+    <%- include("partials/task-list.ejs", { tasks: tasks, heading: currentDayOfWeek + ', ' + currentMonth + ' ' +
+        currentDay, type:''}) %>
+
+        <%- include("partials/footer.ejs") %>
